@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en' class='no-js'>
+	<head>
+		<title>Geektastic Checkout</title>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel="preconnect" href="https://rsms.me">
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	</head>
+	<body class='w-full p-16 text-sm'>
+		<nav class="flex flex-row justify-end p-4 border-b text-base">
+			<div class="mr-4">Basket Items: 7</div>
+		</nav>
+		<div class='flex w-full justify-center m-4'>
+			<table class="w-3/4 text-center table-fixed">
+				<thead>
+					<tr class="bg-gray-100 border-b border-gray-200 uppercase">
+						<th class='w-1/5 py-2'>Product Name</th>
+						<th class='w-1/5 py-2'>Selected Quantity</th>
+						<th class='w-1/5 py-2'>Unit Price</th>
+						<th class='w-1/5 py-2'>Total Price</th>
+						<th class='w-1/5 py-2'></th>
+					</tr>
+				</thead>
+				<tbody class="text-xs">
+					<tr>
+						<td class='py-4 w-1/6'>Red Product</td>
+						<td class='w-1/8'>
+							<select name="choice">
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</td>
+						<td class='w-1/8'>£1.01</div>
+						<td class='w-1/8'>£1.01</div>
+						<td><button class='text-xs p-2 rounded border border-red-600 bg-red-500 hover:bg-red-600 hover:bg-red-700 text-white'>Remove All</button></td>
+					</tr>
+					<tr>
+						<td class='py-4 w-1/6'>Orange Product</td>
+						<td class='w-1/8'>
+							<select name="choice">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4" selected>4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+						</td>
+						<td class='w-1/8'>£2.02</div>
+						<td class='w-1/8'>£8.88</div>
+						<td><button class='text-xs p-2 rounded border border-red-600 bg-red-500 hover:bg-red-600 hover:bg-red-700 text-white'>Remove All</button></td>
+					</tr>
+					<tr>
+						<td class='py-4 w-1/6'>Green Product</td>
+						<td class='w-1/8'>
+							<select name="choice">
+								<option value="1">1</option>
+								<option value="2" selected>2</option>
+							</select>
+						</td>
+						<td class='w-1/8'>£4.04</div>
+						<td class='w-1/8'>£8.88</div>
+						<td><button class='text-xs p-2 rounded border border-red-600 bg-red-500 hover:bg-red-600 hover:bg-red-700 text-white'>Remove All</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class='flex p-8 flex-row w-full justify-end text-base'>Total Price: £18.87</div>
+		<div class='flex flex-row justify-center items-center'>
+			<label>Input Your Card Number</label>
+			<input class='w-1/4 p-2 border rounded border-gray-400 ml-4' type='text' />
+		</div>
+		<div class='flex flex-row justify-end mt-6 px-8'>
+			<a href='/example_html/products' class='text-s p-2 rounded border border-gray-200 hover:bg-gray-200 hover:bg-gray-300'>Continue Shopping</a>
+			<button class='ml-4 text-s p-2 rounded border border-blue-600 bg-blue-500 hover:bg-blue-600 hover:bg-blue-700 text-white'>Checkout</button>
+		</div>
+	</body>
+</html>
