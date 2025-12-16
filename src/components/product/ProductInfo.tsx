@@ -5,11 +5,6 @@ interface ProductInfoProps {
   product: ProductDisplay; // Only display fields (ISP)
 }
 
-/**
- * Display-only component for product information
- * Single Responsibility: only renders product details
- * Interface Segregation: only receives display data
- */
 export const ProductInfo: React.FC<ProductInfoProps> = ({ product }) => {
   const formatPrice = (price: number): string => {
     return `£${price.toFixed(2)}`;

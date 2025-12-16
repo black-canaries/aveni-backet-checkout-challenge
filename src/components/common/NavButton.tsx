@@ -7,10 +7,6 @@ interface NavButtonProps {
   className?: string;
 }
 
-/**
- * Purple navigation button for view transitions
- * Single Responsibility: only handles navigation
- */
 export const NavButton: React.FC<NavButtonProps> = ({
   to,
   children,
@@ -32,9 +28,6 @@ export const NavButton: React.FC<NavButtonProps> = ({
   );
 };
 
-/**
- * Clickable text that navigates (for header totals)
- */
 export const NavLink: React.FC<NavButtonProps> = ({
   to,
   children,

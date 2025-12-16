@@ -6,9 +6,6 @@ interface HeaderProps {
   showTotalCost?: boolean; // Product view shows cost, checkout doesn't
 }
 
-/**
- * Shared header component
- */
 export const Header: React.FC<HeaderProps> = ({ showTotalCost = true }) => {
   const { totalItems, totalCost } = useBasketTotals();
 

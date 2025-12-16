@@ -1,13 +1,9 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React, { type ButtonHTMLAttributes } from 'react';
 
 interface ActionButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'danger';
 }
 
-/**
- * Blue action button for state-changing operations
- * Single Responsibility: only handles button styling/behavior
- */
 export const ActionButton: React.FC<ActionButtonProps> = ({
   children,
   variant = 'primary',

@@ -8,11 +8,6 @@ interface ProductActionsProps {
   product: ProductBasketInfo; // Only sku + basketLimit (ISP)
 }
 
-/**
- * Action buttons for product
- * Single Responsibility: only handles add/remove actions
- * Interface Segregation: only receives basket-related data
- */
 export const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
   const { sku, basketLimit } = product;
   const quantity = useProductQuantity(sku);
